@@ -15,7 +15,7 @@ local IsFirstContainerInitialized = false
 --// Core Functions
 
 local inf = 9^70
--- v1.1.2 in 0.020519733428955078
+-- v1.1.2 in 0.0246884822845459
 local SerializedTable = {}
 local function InsertSerial()
 	SerializedTable[`MainUI_Dashboard`]=Instance.new(`ScreenGui`)
@@ -43,38 +43,58 @@ local function InsertSerial()
 	SerializedTable[`gap`]=Instance.new(`TextButton`)
 	SerializedTable[`UICorner24`]=Instance.new(`UICorner`)
 	SerializedTable[`UIPadding25`]=Instance.new(`UIPadding`)
-	SerializedTable[`UIPadding26`]=Instance.new(`UIPadding`)
-	SerializedTable[`UIListLayout27`]=Instance.new(`UIListLayout`)
+	SerializedTable[`textbox`]=Instance.new(`Frame`)
+	SerializedTable[`UIPadding27`]=Instance.new(`UIPadding`)
+	SerializedTable[`TextBox`]=Instance.new(`TextBox`)
+	SerializedTable[`UIPadding29`]=Instance.new(`UIPadding`)
+	SerializedTable[`UICorner30`]=Instance.new(`UICorner`)
+	SerializedTable[`UIPadding31`]=Instance.new(`UIPadding`)
+	SerializedTable[`UIListLayout32`]=Instance.new(`UIListLayout`)
 	SerializedTable[`bg`]=Instance.new(`TextLabel`)
+	SerializedTable[`UIDragDetector`]=Instance.new(`UIDragDetector`)
+	SerializedTable[`g_Close`]=Instance.new(`ImageLabel`)
+	SerializedTable[`UIAspectRatioConstraint36`]=Instance.new(`UIAspectRatioConstraint`)
+	SerializedTable[`UICorner37`]=Instance.new(`UICorner`)
+	SerializedTable[`UIStroke38`]=Instance.new(`UIStroke`)
 
-	SerializedTable[`bg`].Name=`bg`;SerializedTable[`bg`].Parent=SerializedTable[`MainFrame`];SerializedTable[`bg`].BackgroundColor3=Color3.new(0.23137256503105164,0.23137256503105164,0.23137256503105164);SerializedTable[`bg`].BorderColor3=Color3.new(0,0,0);SerializedTable[`bg`].BorderSizePixel=0;SerializedTable[`bg`].Position=UDim2.new(0,0,0.041989557445049286,0);SerializedTable[`bg`].Size=UDim2.new(1,0,-0.041989557445049286,30);SerializedTable[`bg`].ZIndex=0;SerializedTable[`bg`].FontFace=Font.new(`rbxasset://fonts/families/SourceSansPro.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`bg`].FontSize=Enum.FontSize.Size24;SerializedTable[`bg`].Text=``;SerializedTable[`bg`].TextColor3=Color3.new(1,1,1);SerializedTable[`bg`].TextSize=20;SerializedTable[`bg`].TextXAlignment=Enum.TextXAlignment.Left;
-	SerializedTable[`UIListLayout`].Parent=SerializedTable[`CategoryList`];SerializedTable[`UIListLayout`].SortOrder=Enum.SortOrder.LayoutOrder;SerializedTable[`UIListLayout`].Padding=UDim.new(0,5);
-	SerializedTable[`boolean`].Name=`boolean`;SerializedTable[`boolean`].Parent=SerializedTable[`Row15`];SerializedTable[`boolean`].BackgroundColor3=Color3.new(1,1,1);SerializedTable[`boolean`].BackgroundTransparency=1;SerializedTable[`boolean`].BorderColor3=Color3.new(0,0,0);SerializedTable[`boolean`].BorderSizePixel=0;SerializedTable[`boolean`].Interactable=false;SerializedTable[`boolean`].Size=UDim2.new(1,0,1,0);SerializedTable[`boolean`].Visible=false;SerializedTable[`boolean`].ZIndex=5;
-	SerializedTable[`UIListLayout27`].Parent=SerializedTable[`ContainerHolder`];SerializedTable[`UIListLayout27`].SortOrder=Enum.SortOrder.LayoutOrder;SerializedTable[`UIListLayout27`].Padding=UDim.new(0,5);
-	SerializedTable[`UIPadding25`].Parent=SerializedTable[`gap`];SerializedTable[`UIPadding25`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding25`].PaddingRight=UDim.new(0,5);
+	SerializedTable[`UICorner6`].Parent=SerializedTable[`TextLabel`];SerializedTable[`UICorner6`].CornerRadius=UDim.new(0,4);
+	SerializedTable[`UIPadding27`].Parent=SerializedTable[`textbox`];SerializedTable[`UIPadding27`].PaddingBottom=UDim.new(0,5);SerializedTable[`UIPadding27`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding27`].PaddingRight=UDim.new(0,5);SerializedTable[`UIPadding27`].PaddingTop=UDim.new(0,5);
 	SerializedTable[`UIPadding12`].Parent=SerializedTable[`Row`];SerializedTable[`UIPadding12`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding12`].PaddingRight=UDim.new(0,5);
-	SerializedTable[`UIPadding18`].Parent=SerializedTable[`boolean`];SerializedTable[`UIPadding18`].PaddingBottom=UDim.new(0,5);SerializedTable[`UIPadding18`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding18`].PaddingRight=UDim.new(0,5);SerializedTable[`UIPadding18`].PaddingTop=UDim.new(0,5);
-	SerializedTable[`UIPadding26`].Parent=SerializedTable[`ContainerHolder`];SerializedTable[`UIPadding26`].PaddingBottom=UDim.new(0,5);SerializedTable[`UIPadding26`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding26`].PaddingRight=UDim.new(0,5);SerializedTable[`UIPadding26`].PaddingTop=UDim.new(0,5);
-	SerializedTable[`UICorner24`].Parent=SerializedTable[`gap`];SerializedTable[`UICorner24`].CornerRadius=UDim.new(0,4);
+	SerializedTable[`UIPadding25`].Parent=SerializedTable[`gap`];SerializedTable[`UIPadding25`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding25`].PaddingRight=UDim.new(0,5);
+	SerializedTable[`UIPadding31`].Parent=SerializedTable[`ContainerHolder`];SerializedTable[`UIPadding31`].PaddingBottom=UDim.new(0,5);SerializedTable[`UIPadding31`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding31`].PaddingRight=UDim.new(0,5);SerializedTable[`UIPadding31`].PaddingTop=UDim.new(0,5);
 	SerializedTable[`TextLabel`].Parent=SerializedTable[`MainFrame`];SerializedTable[`TextLabel`].BackgroundColor3=Color3.new(0.23137256503105164,0.23137256503105164,0.23137256503105164);SerializedTable[`TextLabel`].BorderColor3=Color3.new(0,0,0);SerializedTable[`TextLabel`].BorderSizePixel=0;SerializedTable[`TextLabel`].Size=UDim2.new(1,0,0,30);SerializedTable[`TextLabel`].FontFace=Font.new(`rbxasset://fonts/families/SourceSansPro.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`TextLabel`].FontSize=Enum.FontSize.Size24;SerializedTable[`TextLabel`].Text=`Title Label`;SerializedTable[`TextLabel`].TextColor3=Color3.new(1,1,1);SerializedTable[`TextLabel`].TextSize=20;SerializedTable[`TextLabel`].TextXAlignment=Enum.TextXAlignment.Left;
-	SerializedTable[`gap`].Name=`gap`;SerializedTable[`gap`].Parent=SerializedTable[`Row15`];SerializedTable[`gap`].BackgroundColor3=Color3.new(0.23137256503105164,0.23137256503105164,0.23137256503105164);SerializedTable[`gap`].BorderColor3=Color3.new(0,0,0);SerializedTable[`gap`].BorderSizePixel=0;SerializedTable[`gap`].Size=UDim2.new(1,0,1,0);SerializedTable[`gap`].AutoButtonColor=false;SerializedTable[`gap`].FontFace=Font.new(`rbxasset://fonts/families/Arial.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`gap`].FontSize=Enum.FontSize.Size18;SerializedTable[`gap`].TextColor3=Color3.new(1,1,1);SerializedTable[`gap`].TextSize=15;SerializedTable[`gap`].TextXAlignment=Enum.TextXAlignment.Left;
-	SerializedTable[`ImageLabel`].Parent=SerializedTable[`boolean`];SerializedTable[`ImageLabel`].AnchorPoint=Vector2.new(1,1);SerializedTable[`ImageLabel`].BackgroundColor3=Color3.new(0.08235294371843338,0.08235294371843338,0.08235294371843338);SerializedTable[`ImageLabel`].BorderColor3=Color3.new(1,1,1);SerializedTable[`ImageLabel`].Position=UDim2.new(1,0,1,0);SerializedTable[`ImageLabel`].Size=UDim2.new(1,0,1,0);SerializedTable[`ImageLabel`].Image=`rbxassetid://119214585520707`;SerializedTable[`ImageLabel`].ImageColor3=Color3.new(0,0,0);SerializedTable[`ImageLabel`].ImageTransparency=1;
-	SerializedTable[`UICorner21`].Parent=SerializedTable[`ImageLabel`];SerializedTable[`UICorner21`].CornerRadius=UDim.new(0,2);
-	SerializedTable[`Row15`].Name=`Row`;SerializedTable[`Row15`].Parent=SerializedTable[`ContainerHolder`];SerializedTable[`Row15`].BackgroundColor3=Color3.new(0.21568629145622253,0.21568629145622253,0.21568629145622253);SerializedTable[`Row15`].BorderColor3=Color3.new(0,0,0);SerializedTable[`Row15`].BorderSizePixel=0;SerializedTable[`Row15`].Size=UDim2.new(1,0,0,30);
-	SerializedTable[`UIAspectRatioConstraint`].Parent=SerializedTable[`ImageLabel`];
 	SerializedTable[`UICorner16`].Parent=SerializedTable[`Row15`];SerializedTable[`UICorner16`].CornerRadius=UDim.new(0,4);
 	SerializedTable[`UIStroke`].Parent=SerializedTable[`ImageLabel`];SerializedTable[`UIStroke`].Color=Color3.new(0.08235294371843338,0.08235294371843338,0.08235294371843338);
 	SerializedTable[`CategoryList`].Name=`CategoryList`;SerializedTable[`CategoryList`].Parent=SerializedTable[`MainFrame`];SerializedTable[`CategoryList`].Active=true;SerializedTable[`CategoryList`].AnchorPoint=Vector2.new(0,1);SerializedTable[`CategoryList`].BackgroundColor3=Color3.new(0.1411764770746231,0.1411764770746231,0.1411764770746231);SerializedTable[`CategoryList`].BackgroundTransparency=1;SerializedTable[`CategoryList`].BorderColor3=Color3.new(0,0,0);SerializedTable[`CategoryList`].BorderSizePixel=0;SerializedTable[`CategoryList`].Position=UDim2.new(0,0,1,0);SerializedTable[`CategoryList`].Size=UDim2.new(0.30000001192092896,0,1,-30);SerializedTable[`CategoryList`].ScrollBarImageColor3=Color3.new(0,0,0);SerializedTable[`CategoryList`].ScrollBarThickness=0;
-	SerializedTable[`UICorner11`].Parent=SerializedTable[`Row`];SerializedTable[`UICorner11`].CornerRadius=UDim.new(0,4);
 	SerializedTable[`Row`].Name=`Row`;SerializedTable[`Row`].Parent=SerializedTable[`CategoryList`];SerializedTable[`Row`].BackgroundColor3=Color3.new(0.23137256503105164,0.23137256503105164,0.23137256503105164);SerializedTable[`Row`].BorderColor3=Color3.new(0,0,0);SerializedTable[`Row`].BorderSizePixel=0;SerializedTable[`Row`].Size=UDim2.new(1,0,0,30);SerializedTable[`Row`].AutoButtonColor=false;SerializedTable[`Row`].FontFace=Font.new(`rbxasset://fonts/families/Arial.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`Row`].FontSize=Enum.FontSize.Size18;SerializedTable[`Row`].TextColor3=Color3.new(1,1,1);SerializedTable[`Row`].TextSize=15;SerializedTable[`Row`].TextXAlignment=Enum.TextXAlignment.Left;
 	SerializedTable[`ContainerHolder`].Name=`ContainerHolder`;SerializedTable[`ContainerHolder`].Parent=SerializedTable[`MainFrame`];SerializedTable[`ContainerHolder`].Active=true;SerializedTable[`ContainerHolder`].AnchorPoint=Vector2.new(1,1);SerializedTable[`ContainerHolder`].BackgroundColor3=Color3.new(0.1411764770746231,0.1411764770746231,0.1411764770746231);SerializedTable[`ContainerHolder`].BorderColor3=Color3.new(0,0,0);SerializedTable[`ContainerHolder`].BorderSizePixel=0;SerializedTable[`ContainerHolder`].Position=UDim2.new(1,0,1,0);SerializedTable[`ContainerHolder`].Size=UDim2.new(0.699999988079071,0,1,-30);SerializedTable[`ContainerHolder`].ScrollBarImageColor3=Color3.new(0,0,0);SerializedTable[`ContainerHolder`].ScrollBarThickness=0;
-	SerializedTable[`MainFrame`].Name=`MainFrame`;SerializedTable[`MainFrame`].Parent=SerializedTable[`MainUI_Dashboard`];SerializedTable[`MainFrame`].AnchorPoint=Vector2.new(0.5,0.5);SerializedTable[`MainFrame`].BackgroundColor3=Color3.new(0.08235294371843338,0.08235294371843338,0.08235294371843338);SerializedTable[`MainFrame`].BorderColor3=Color3.new(0.13333334028720856,0.13333334028720856,0.13333334028720856);SerializedTable[`MainFrame`].Position=UDim2.new(0.48124998807907104,0,0.5111265778541565,0);SerializedTable[`MainFrame`].Size=UDim2.new(0.5,0,0.5,0);
+	SerializedTable[`g_Close`].Name=`g_Close`;SerializedTable[`g_Close`].Parent=SerializedTable[`MainFrame`];SerializedTable[`g_Close`].AnchorPoint=Vector2.new(1,0);SerializedTable[`g_Close`].BackgroundColor3=Color3.new(1,1,1);SerializedTable[`g_Close`].BorderColor3=Color3.new(1,1,1);SerializedTable[`g_Close`].Position=UDim2.new(1,-5,0,5);SerializedTable[`g_Close`].Size=UDim2.new(0,20,0,20);SerializedTable[`g_Close`].Image=`rbxassetid://11738016294`;SerializedTable[`g_Close`].ImageColor3=Color3.new(0,0,0);
+	SerializedTable[`UICorner`].Parent=SerializedTable[`MainFrame`];SerializedTable[`UICorner`].CornerRadius=UDim.new(0,4);
+	SerializedTable[`UICorner30`].Parent=SerializedTable[`TextBox`];SerializedTable[`UICorner30`].CornerRadius=UDim.new(0,4);
+	SerializedTable[`TextBox`].Parent=SerializedTable[`textbox`];SerializedTable[`TextBox`].AnchorPoint=Vector2.new(1,0);SerializedTable[`TextBox`].AutomaticSize=Enum.AutomaticSize.X;SerializedTable[`TextBox`].BackgroundColor3=Color3.new(0.0784313753247261,0.0784313753247261,0.0784313753247261);SerializedTable[`TextBox`].BorderColor3=Color3.new(0,0,0);SerializedTable[`TextBox`].BorderSizePixel=0;SerializedTable[`TextBox`].Position=UDim2.new(1,0,0,0);SerializedTable[`TextBox`].Size=UDim2.new(0,0,1,0);SerializedTable[`TextBox`].CursorPosition=-1;SerializedTable[`TextBox`].FontFace=Font.new(`rbxasset://fonts/families/SourceSansPro.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`TextBox`].FontSize=Enum.FontSize.Size14;SerializedTable[`TextBox`].PlaceholderText=`...`;SerializedTable[`TextBox`].Text=``;SerializedTable[`TextBox`].TextColor3=Color3.new(1,1,1);SerializedTable[`TextBox`].TextSize=14;
+	SerializedTable[`UIListLayout`].Parent=SerializedTable[`CategoryList`];SerializedTable[`UIListLayout`].SortOrder=Enum.SortOrder.LayoutOrder;SerializedTable[`UIListLayout`].Padding=UDim.new(0,5);
+	SerializedTable[`boolean`].Name=`boolean`;SerializedTable[`boolean`].Parent=SerializedTable[`Row15`];SerializedTable[`boolean`].BackgroundColor3=Color3.new(1,1,1);SerializedTable[`boolean`].BackgroundTransparency=1;SerializedTable[`boolean`].BorderColor3=Color3.new(0,0,0);SerializedTable[`boolean`].BorderSizePixel=0;SerializedTable[`boolean`].Interactable=false;SerializedTable[`boolean`].Size=UDim2.new(1,0,1,0);SerializedTable[`boolean`].Visible=false;SerializedTable[`boolean`].ZIndex=5;
+	SerializedTable[`UIPadding18`].Parent=SerializedTable[`boolean`];SerializedTable[`UIPadding18`].PaddingBottom=UDim.new(0,5);SerializedTable[`UIPadding18`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding18`].PaddingRight=UDim.new(0,5);SerializedTable[`UIPadding18`].PaddingTop=UDim.new(0,5);
+	SerializedTable[`UICorner37`].Parent=SerializedTable[`g_Close`];SerializedTable[`UICorner37`].CornerRadius=UDim.new(0,2);
+	SerializedTable[`UIStroke38`].Parent=SerializedTable[`g_Close`];SerializedTable[`UIStroke38`].Color=Color3.new(0.08235294371843338,0.08235294371843338,0.08235294371843338);
+	SerializedTable[`UIAspectRatioConstraint36`].Parent=SerializedTable[`g_Close`];
+	SerializedTable[`UICorner24`].Parent=SerializedTable[`gap`];SerializedTable[`UICorner24`].CornerRadius=UDim.new(0,4);
+	SerializedTable[`bg`].Name=`bg`;SerializedTable[`bg`].Parent=SerializedTable[`MainFrame`];SerializedTable[`bg`].BackgroundColor3=Color3.new(0.23137256503105164,0.23137256503105164,0.23137256503105164);SerializedTable[`bg`].BorderColor3=Color3.new(0,0,0);SerializedTable[`bg`].BorderSizePixel=0;SerializedTable[`bg`].Position=UDim2.new(0,0,0.041989557445049286,0);SerializedTable[`bg`].Size=UDim2.new(1,0,-0.041989557445049286,30);SerializedTable[`bg`].ZIndex=0;SerializedTable[`bg`].FontFace=Font.new(`rbxasset://fonts/families/SourceSansPro.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`bg`].FontSize=Enum.FontSize.Size24;SerializedTable[`bg`].Text=``;SerializedTable[`bg`].TextColor3=Color3.new(1,1,1);SerializedTable[`bg`].TextSize=20;SerializedTable[`bg`].TextXAlignment=Enum.TextXAlignment.Left;
+	SerializedTable[`Row15`].Name=`Row`;SerializedTable[`Row15`].Parent=SerializedTable[`ContainerHolder`];SerializedTable[`Row15`].BackgroundColor3=Color3.new(0.21568629145622253,0.21568629145622253,0.21568629145622253);SerializedTable[`Row15`].BorderColor3=Color3.new(0,0,0);SerializedTable[`Row15`].BorderSizePixel=0;SerializedTable[`Row15`].Size=UDim2.new(1,0,0,30);
+	SerializedTable[`UIListLayout32`].Parent=SerializedTable[`ContainerHolder`];SerializedTable[`UIListLayout32`].SortOrder=Enum.SortOrder.LayoutOrder;SerializedTable[`UIListLayout32`].Padding=UDim.new(0,5);
+	SerializedTable[`gap`].Name=`gap`;SerializedTable[`gap`].Parent=SerializedTable[`Row15`];SerializedTable[`gap`].BackgroundColor3=Color3.new(0.23137256503105164,0.23137256503105164,0.23137256503105164);SerializedTable[`gap`].BorderColor3=Color3.new(0,0,0);SerializedTable[`gap`].BorderSizePixel=0;SerializedTable[`gap`].Size=UDim2.new(1,0,1,0);SerializedTable[`gap`].AutoButtonColor=false;SerializedTable[`gap`].FontFace=Font.new(`rbxasset://fonts/families/Arial.json`,Enum.FontWeight.Regular,Enum.FontStyle.Normal);SerializedTable[`gap`].FontSize=Enum.FontSize.Size18;SerializedTable[`gap`].TextColor3=Color3.new(1,1,1);SerializedTable[`gap`].TextSize=15;SerializedTable[`gap`].TextXAlignment=Enum.TextXAlignment.Left;
+	SerializedTable[`UIPadding`].Parent=SerializedTable[`TextLabel`];SerializedTable[`UIPadding`].PaddingLeft=UDim.new(0,10);SerializedTable[`UIPadding`].PaddingRight=UDim.new(0,10);
+	SerializedTable[`UICorner11`].Parent=SerializedTable[`Row`];SerializedTable[`UICorner11`].CornerRadius=UDim.new(0,4);
+	SerializedTable[`textbox`].Name=`textbox`;SerializedTable[`textbox`].Parent=SerializedTable[`Row15`];SerializedTable[`textbox`].BackgroundColor3=Color3.new(1,1,1);SerializedTable[`textbox`].BackgroundTransparency=1;SerializedTable[`textbox`].BorderColor3=Color3.new(0,0,0);SerializedTable[`textbox`].BorderSizePixel=0;SerializedTable[`textbox`].Size=UDim2.new(1,0,1,0);SerializedTable[`textbox`].ZIndex=5;
+	SerializedTable[`UICorner21`].Parent=SerializedTable[`ImageLabel`];SerializedTable[`UICorner21`].CornerRadius=UDim.new(0,2);
+	SerializedTable[`UIDragDetector`].Parent=SerializedTable[`MainFrame`];SerializedTable[`UIDragDetector`].BoundingUI=SerializedTable[`TextLabel`];
+	SerializedTable[`MainFrame`].Name=`MainFrame`;SerializedTable[`MainFrame`].Parent=SerializedTable[`MainUI_Dashboard`];SerializedTable[`MainFrame`].AnchorPoint=Vector2.new(0.5,0.5);SerializedTable[`MainFrame`].BackgroundColor3=Color3.new(0.08235294371843338,0.08235294371843338,0.08235294371843338);SerializedTable[`MainFrame`].BorderColor3=Color3.new(0.13333334028720856,0.13333334028720856,0.13333334028720856);SerializedTable[`MainFrame`].Position=UDim2.new(0.48124998807907104,0,0.5111265778541565,0);SerializedTable[`MainFrame`].Size=UDim2.new(0.30000001192092896,0,0.30000001192092896,0);
 	SerializedTable[`UIPadding9`].Parent=SerializedTable[`CategoryList`];SerializedTable[`UIPadding9`].PaddingBottom=UDim.new(0,5);SerializedTable[`UIPadding9`].PaddingLeft=UDim.new(0,5);SerializedTable[`UIPadding9`].PaddingRight=UDim.new(0,5);SerializedTable[`UIPadding9`].PaddingTop=UDim.new(0,5);
 	SerializedTable[`UICorner8`].Parent=SerializedTable[`CategoryList`];SerializedTable[`UICorner8`].CornerRadius=UDim.new(0,4);
 	SerializedTable[`MainUI_Dashboard`].Name=`MainUI_Dashboard`;SerializedTable[`MainUI_Dashboard`].Parent=nil;SerializedTable[`MainUI_Dashboard`].ZIndexBehavior=Enum.ZIndexBehavior.Sibling;
-	SerializedTable[`UICorner`].Parent=SerializedTable[`MainFrame`];SerializedTable[`UICorner`].CornerRadius=UDim.new(0,4);
-	SerializedTable[`UICorner6`].Parent=SerializedTable[`TextLabel`];SerializedTable[`UICorner6`].CornerRadius=UDim.new(0,4);
-	SerializedTable[`UIPadding`].Parent=SerializedTable[`TextLabel`];SerializedTable[`UIPadding`].PaddingLeft=UDim.new(0,10);SerializedTable[`UIPadding`].PaddingRight=UDim.new(0,10);
+	SerializedTable[`ImageLabel`].Parent=SerializedTable[`boolean`];SerializedTable[`ImageLabel`].AnchorPoint=Vector2.new(1,1);SerializedTable[`ImageLabel`].BackgroundColor3=Color3.new(0.08235294371843338,0.08235294371843338,0.08235294371843338);SerializedTable[`ImageLabel`].BorderColor3=Color3.new(1,1,1);SerializedTable[`ImageLabel`].Position=UDim2.new(1,0,1,0);SerializedTable[`ImageLabel`].Size=UDim2.new(1,0,1,0);SerializedTable[`ImageLabel`].Image=`rbxassetid://119214585520707`;SerializedTable[`ImageLabel`].ImageColor3=Color3.new(0,0,0);SerializedTable[`ImageLabel`].ImageTransparency=1;
+	SerializedTable[`UIPadding29`].Parent=SerializedTable[`TextBox`];SerializedTable[`UIPadding29`].PaddingLeft=UDim.new(0,15);SerializedTable[`UIPadding29`].PaddingRight=UDim.new(0,15);
+	SerializedTable[`UIAspectRatioConstraint`].Parent=SerializedTable[`ImageLabel`];
 end
 InsertSerial()
 
@@ -90,14 +110,25 @@ local function SetupInterface()
 		warn("You're running SimpleLibrary in studio.")
 	end
 	
+	GetRowOutOf(SerializedTable.ContainerHolder).textbox.Visible = false
 	SerializedTable.ContainerHolder.Visible = false
 	SerializedTable.CategoryList.Row.Visible = false
 	SerializedTable.ContainerHolder.Row.Visible = false
 	SerializedTable.MainUI_Dashboard.Parent = CoreGui
+	
+	SerializedTable.g_Close.InputBegan:Connect(function(k)
+		if k.UserInputState==Enum.UserInputType.MouseButton1 then
+			SerializedTable.MainUI_Dashboard:Destroy()
+		end
+	end)
 end
 
 
 --// Library Functions
+
+function module.Title(Name:string)
+	SerializedTable.MainFrame.TextLabel.Text = Name
+end
 
 function module.CreateCategory(Name:string)
 	local ListButton:TextButton = GetRowOutOf(SerializedTable.CategoryList):Clone()
@@ -163,6 +194,39 @@ function module.CreateRow(Container:Frame, Name:string, Style:string, Value:Inst
 				i.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
 			end
 		end)
+	end
+	if Style=="string" or Style=="number" then
+		local Value:BoolValue = Value
+		local Sheet:Frame = ListRow.textbox
+		Sheet.Visible = true
+		local i = Sheet:FindFirstChildWhichIsA("TextBox")
+		
+		local previoustext = ""
+		i:GetPropertyChangedSignal("Text"):Connect(function()
+			previoustext = i.Text
+		end)
+		i.FocusLost:Connect(function()
+			if Style=="string" then
+				Value.Value = i.Text
+			else
+				local t = tonumber(i.Text)
+
+				if t then
+					Value.Value = t
+				else
+					Value.Value = 0
+					i.Text = "0"
+				end
+			end
+			
+			i.Text = Value.Value
+		end)
+		Value:GetPropertyChangedSignal("Value"):Connect(function()
+			if not i:IsFocused() then
+				i.Text = Value.Value
+			end
+		end)
+		
 	end
 	
 	
