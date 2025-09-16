@@ -190,7 +190,7 @@ local function SetupInterface()
 	GetRowOutOf(SerializedTable.ContainerHolder.holder).textbox.Visible = false
 	SerializedTable.ContainerHolder.Visible = false
 	SerializedTable.CategoryList.Row.Visible = false
-	SerializedTable.MainFrame.Size = UDim2.fromScale(.5, .5)
+	SerializedTable.MainFrame.Size = UDim2.fromScale(.25, .25)
 	SerializedTable.ContainerHolder.holder.Row.Visible = false
 	SerializedTable.MainUI_Dashboard.Parent = CoreGui
 	SerializedTable.MainUI_Dashboard.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
