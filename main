@@ -231,7 +231,7 @@ end
 local function SetupInterface()
 	if not RunService:IsStudio() then
 		CoreGui = game:GetService("CoreGui")
-		SerializedTable.MainFrame.Size = UDim2.fromScale(.4, .4)
+		SerializedTable.MainFrame.Size = UDim2.fromScale(.33, .33)
 	else
 		warn("You're running SimpleLibrary in studio.")
 	end
